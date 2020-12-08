@@ -1,5 +1,8 @@
 def scenario_one():
-  print(hi)
+  print("hi")
+
+print("hi")
+
 """
 scenario_two(fight,flight)
 if flight_one:
