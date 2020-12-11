@@ -1,10 +1,13 @@
 
-scenario_one_print = input("You were camping one day, when a bear was found roaming around your tent. Unfortunately, it appears to be agressive, so you don't have much choice but to fight the bear, or run. Type Fight or Flight to decide your fate.")
-
+scenario_one_print = input("You were camping one day, when a bear was found roaming around\nyour tent. Unfortunately, it appears to be agressive, so you\ndon't have much choice but to fight the bear, or run. Type\n'Fight' to fight the bear, or 'Flight' to run away.\n")
 
 def scenario_one():
-  print("test")
+  if scenario_one_print == "Fight" :
+    print("You chose to fight the bear! It was not much of a competition, for the bear won in an instant. But, you made it out alive,\ndespite it being a very close call.")
+  elif scenario_one_print == "Flight" :
+    print("You chose to run from the bear! It was a smart decision, because the bear immediately loses interest, and continues to sniff around your tent. Unfortunately, your town is known for being full of")
 
+scenario_one()
 
 #scenario_two(fight,flight)
 #if flight_one:
