@@ -1,5 +1,5 @@
 
-explanation_check = input("Have you played the game before? Type 'Y' if yes, 'N' if no.\n")
+explanation_check = input("Welcome to Fight or Flight! Have you played the game before? Type 'Y' if yes, 'N' if no.\n")
 
 def game_explanation():
   print("\nIn this game, you will answer different scenarios you are presented with by answering either Fight or Flight. Some scenarios do not allow you to answer them. Based on the decisions you make, your character will move through the game, dealing with your past decisions. If you type something other than\n'Fight' or 'Flight', the game will not work. If you are not given the option\nto respond, press enter to continue the game. Good luck!")
@@ -23,6 +23,21 @@ def scenario_one():
     print("\nYou chose to run from the bear! It was a smart decision, because the bear\nimmediately loses interest, and continues to sniff around your tent.\nUnfortunately, your town is known for being full of quarrelsome people, that\nwould probably disagree with your decision. Good thing no one saw you!")
 
 scenario_one()
+
+def scenario_two():
+  if fight_one == "True":
+    print("As you are walking downtown after your recovering, you notice a lumberjack walk by you, and give you a respectful nod. Even though you are slightly confused by this, you can not ignore the fact it feels like you barely escaped a dangerous situation. You wonder why he gave you that nod, but continue on with your day.\n")
+  elif fight_one == "False":
+    print("The world must not be feeling kind to you today. While walking through your neighborhood, a threatening lumberjack approaches you. He explains that he was passing by when he saw you running from the bear. This was a foolsih decision. The lumberjack challenges you to a duel! Do you choose to fight or run?")
+
+scenario_two_print = input("Type 'Fight' to accept the duel, or 'Flight' to run away.\n")
+
+if fight_one == "True":
+  fight_two = "Pass"
+elif scenario_two_print == "Fight":
+  fight_two = "True"
+elif scenario_two_print == "Flight":
+  fight_two = "False"
 
 #scenario_two(fight,flight)
 #if flight_one:
