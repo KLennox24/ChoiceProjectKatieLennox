@@ -1,10 +1,15 @@
 
+explanation_check = input("Have you played the game before? Type 'Y' if yes, 'N' if no.\n")
+
 def game_explanation():
-  print("In this game, you will answer different scenarios you are presented with by answering either Fight or Flight. Some scenarios do not allow you to answer them. Based on the decisions you make, your character will move through the game, dealing with your past decisions. If you type something other than 'Fight' or 'Flight', the game will not work. If you are not given the option to respond, press enter to continue the game. Good luck!")
+  print("\nIn this game, you will answer different scenarios you are presented with by answering either Fight or Flight. Some scenarios do not allow you to answer them. Based on the decisions you make, your character will move through the game, dealing with your past decisions. If you type something other than\n'Fight' or 'Flight', the game will not work. If you are not given the option\nto respond, press enter to continue the game. Good luck!")
 
-game_explanation()
+if explanation_check == "Y":
+  print("\nThe first scenario will begin shortly.")
+elif explanation_check == "N":
+  game_explanation()
 
-scenario_one_print = input("You were camping one day, when a bear was found roaming around\nyour tent. Unfortunately, it appears to be agressive, so you\ndon't have much choice but to fight the bear, or run. Type\n'Fight' to fight the bear, or 'Flight' to run away.\n")
+scenario_one_print = input("\nYou were camping one day, when a bear was found roaming around\nyour tent. Unfortunately, it appears to be agressive, so you\ndon't have much choice but to fight the bear, or run. Type\n'Fight' to fight the bear, or 'Flight' to run away.\n")
 
 if scenario_one_print == "Fight":
   fight_one = "True"
