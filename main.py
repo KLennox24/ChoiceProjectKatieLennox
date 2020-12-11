@@ -43,6 +43,27 @@ elif scenario_two_print == "Fight":
 elif scenario_two_print == "Flight":
   fight_two = "False"
 
+def scenario_three():
+  if fight_two == "True":
+    print("Although you lost the fight, the mayor of your town gives you an award for trying. Turns out, this particular lumberjack is known for picking on random people that are minding their own business. Usually, they run from fear, (he was an intimidating guy) so it was a commendable effort.")
+  elif fight_two == "False":
+    print("You have been shunned from your town for cowardice. They couldn't allow a chicken to stay. Would you like to prove the people of your town wrong by picking a fight, or leave the town peacefully?")
+  elif fight_two == "Pass":
+    print("It's been very quiet since your original bear encounter. Maybe luck is on your side today? Either way, it has been a calm few days.")
+
+scenario_three() 
+
+if fight_two == "False":
+  scenario_three_print = input("Type 'Fight' to accept the duel, or 'Flight' to run away.\n")
+  if scenario_three_print == "Fight":
+    fight_three = "True"
+  elif scenario_three_print == "Flight":
+    fight_three = "False"
+elif fight_two == "True":
+  fight_three = "Pass"
+elif fight_two == "Pass":
+  fight_three = "Pass"
+
 #scenario_two(fight,flight)
 #if flight_one:
 #Buff lumberjack laughs at the decision and challenges you
