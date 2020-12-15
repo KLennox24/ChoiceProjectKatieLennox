@@ -64,29 +64,21 @@ elif fight_two == "True":
 elif fight_two == "Pass":
   fight_three = "Pass"
   
+def scenario_four():
+  if fight_three == "True":
+    print("\'Twas but a test! You didn't stand a chance against the brutes of your village, but after discovering you were willing to fight them, they welcome you back with open arms.")
+  elif fight_three == "False":
+    print("You have been kicked out of your village. It might have been for the best, but now you are in a new town, knowing absolutley no one.")
+  elif fight_three == "Pass":
+    print("It has been quiet for a while, so you decide to do some snooping. After finding nothing, you ask the universe for something to do. This was a mistake. You thought look was finally on your side? A foolish miscalculation. Within mere seconds, you find yourself surrounded by hundreds of minute tasks, all equally important, begging to be completed. Do you dare tempt the fates once more by starting a fight with existence itself?")
+  
+scenario_four()
 
-#scenario_two(fight,flight)
-#if flight_one:
-#Buff lumberjack laughs at the decision and challenges you
-#to a duel
-#fight_two, flight_two
-#else:
-#Passing lumberjack nods in respect after you fought the
-#bear
-#pass_two (because its part of scenario two)
-#scenario_three(flight_two, fight_two, pass_two)
-#if flight_two:
-#You have been shunned from your village for cowardice.
-#Hopefully that doesn’t become important later. Try to
-#disagree with village or no
-#flight_three fight_three
-#if fight_two:
-#Although you lost the fight, the mayor of your village
-#gives you an award for trying. Usually, they run from
-#fear, so it was a commendable effort.
-#pass_three
-#if pass_two:
-#pass_three
+if fight_three == "True":
+  fight_four = "Pass"
+elif fight_three == "False":
+  fight_four = "Pass"
+
 #scenario_four(fight_three, flight_three, pass_three)
 #if fight three:
 #pass_four
