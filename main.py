@@ -78,6 +78,12 @@ if fight_three == "True":
   fight_four = "Pass"
 elif fight_three == "False":
   fight_four = "Pass"
+elif fight_three == "Pass":
+  scenario_four_print = input("Do you chose to fight reality itself? Type 'Fight' to battle the being, 'Flight' to run away. ")
+  if scenario_four_print == "Fight":
+    fight_four = "True"
+  elif scenario_four_print == "Flight":
+    fight_four = "False"
 
 #scenario_four(fight_three, flight_three, pass_three)
 #if fight three:
