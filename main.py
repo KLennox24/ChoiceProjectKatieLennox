@@ -1,4 +1,4 @@
-"""
+
 explanation_check = input("Welcome to Fight or Flight! Have you played the game before? Type 'Y' if\nyes, 'N' if no.\n")
 
 def game_explanation():
@@ -121,5 +121,3 @@ elif fight_four == "False":
     print("\nYou chose to try an alternate route! RESTART GAME")
   elif scenario_five_print_four == "Accept Success":
     print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. GAME WON")
-"""
-print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. GAME WON")
