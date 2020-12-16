@@ -66,11 +66,11 @@ elif fight_two == "Pass":
   
 def scenario_four():
   if fight_three == "True":
-    print("\'Twas but a test! You didn't stand a chance against the brutes of your village, but after discovering you were willing to fight them, they welcome you back with open arms.")
+    print("\n\'Twas but a test! You didn't stand a chance against the brutes of your\nvillage, but after discovering you were willing to fight them, they\nwelcome you back with open arms.")
   elif fight_three == "False":
-    print("You have been kicked out of your village. It might have been for the best, but now you are in a new town, knowing absolutley no one.")
+    print("\nYou have been kicked out of your village. It might have been for the best,\nbut now you are in a new town, knowing absolutley no one.")
   elif fight_three == "Pass":
-    print("It has been quiet for a while, so you decide to do some snooping. After finding nothing, you ask the universe for something to do. This was a mistake. You thought look was finally on your side? A foolish miscalculation. Within mere seconds, you find yourself surrounded by hundreds of minute tasks, all equally important, begging to be completed. Do you dare tempt the fates once more by starting a fight with existence itself?")
+    print("\nIt has been quiet for a while, so you decide to do some snooping. After\nfinding nothing, you ask the universe for something to do. This was a\nmistake. You thought luck was finally on your side? A foolish\nmiscalculation. Within mere seconds, you find yourself surrounded by\nhundreds of minute tasks, all equally important, begging to be completed.\nDo you dare tempt the fates once more by starting a fight with existence\nitself?")
   
 scenario_four()
 
@@ -79,7 +79,7 @@ if fight_three == "True":
 elif fight_three == "False":
   fight_four = "Pass"
 elif fight_three == "Pass":
-  scenario_four_print = input("Do you chose to fight reality itself? Type 'Fight' to battle the being, 'Flight' to run away. ")
+  scenario_four_print = input("\nDo you chose to fight reality itself? Type 'Fight' to battle the being,\n'Flight' to run away. ")
   if scenario_four_print == "Fight":
     fight_four = "True"
   elif scenario_four_print == "Flight":
