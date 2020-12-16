@@ -96,3 +96,12 @@ def scenario_five():
     print("A reasonable answer, it would have been interesting if you tried. You continue on with your life, completing all those tasks that appear to have piled up. They take you through a life full of happiness and success. When your days come to an end, you ponder over the strangest decisions you've made in your lifetime. The brawl with the bear comes back to you. As your existence begins to fade as a sign of your age, you begin to wonder. What would have happened if you made a different choice?")
 
 scenario_five()
+
+if fight_three == "False":
+  scenario_five_print_one = input("\nType 'Start Anew' to start a life in your new town, or 'Give In' to try to go home one last time.")
+elif fight_three == "True":
+  scenario_five_print_two = input("hi")
+elif fight_four == "True":
+  scenario_five_print_three = input("test")
+elif fight_four == "False":
+  scenario_five_print_four = input("test")
