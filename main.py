@@ -91,7 +91,7 @@ def scenario_five():
   elif fight_three == "True":
     print("What a month. You've run from a bear, dueled a strange man, and earned the respect of everyone around you. What comes next? Running for mayor? Facing that dreaded bear once more? A life full of pride and victory? Learning from mistakes? No one can decide this but you, so pick a good life to lead.")
   elif fight_four == "True":
-    print("It was quiet life you lead, but it certainly ended with lots of excitement. How you thought you could beat reality itself will be a mystery for ages to come, but there is some worth in what you have done so far. Albeit it wasn't much. You pretty much dodged every interesting bit of life that was thrown at you. Would you like to try again?")
+    print("It was quiet life you led, but it certainly ended with lots of excitement. How you thought you could beat reality itself will be a mystery for ages to come, but there is some worth in what you have done so far. Albeit it wasn't much. You pretty much dodged every interesting bit of life that was thrown at you. Would you like to try again?")
   elif fight_four == "False":
     print("A reasonable answer, it would have been interesting if you tried. You continue on with your life, completing all those tasks that appear to have piled up. They take you through a life full of happiness and success. When your days come to an end, you ponder over the strangest decisions you've made in your lifetime. The brawl with the bear comes back to you. As your existence begins to fade as a sign of your age, you begin to wonder. What would have happened if you made a different choice?")
 
@@ -100,8 +100,8 @@ scenario_five()
 if fight_three == "False":
   scenario_five_print_one = input("\nType 'Start Anew' to start a life in your new town, or 'Give In' to try to go home one last time.")
 elif fight_three == "True":
-  scenario_five_print_two = input("hi")
+  scenario_five_print_two = input("\nType 'Mayor' to try to run for mayor, or type 'Final Boss Fight' to go looking for the bear you ran from in the beginning.")
 elif fight_four == "True":
-  scenario_five_print_three = input("test")
+  scenario_five_print_three = input("\nType 'Try Again' to try different routes of the life you led, or type 'Accept Failure' to accept you have failed in this timeline and will eternally stare into the abyss as the result of your actions.")
 elif fight_four == "False":
-  scenario_five_print_four = input("test")
+  scenario_five_print_four = input("\nType 'Alternate Route' to try your life again from your original encounter, or 'Accept Success' to leave things as they are.")
