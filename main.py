@@ -99,9 +99,25 @@ scenario_five()
 
 if fight_three == "False":
   scenario_five_print_one = input("\nType 'Start Anew' to start a life in your new town, or 'Give In' to try to go home one last time.")
+  if scenario_five_print_one == "Start Anew":
+    print("You have chosen to start anew! RESTART GAME")
+  elif scenario_five_print_one == 'Give In':
+    print("You try to go home one last time, to the one place you only ever knew. After realizing there is no chance they will let you come back, you go back to your new home. What now?")
 elif fight_three == "True":
   scenario_five_print_two = input("\nType 'Mayor' to try to run for mayor, or type 'Final Boss Fight' to go looking for the bear you ran from in the beginning.")
+  if scenario_five_print_two == "Mayor":
+    print("You chose to run for mayor! You are the best mayor your town has ever had, and you won the election easily. You and your fellow brutes wipe out the bear population in nearby areas, successfully solve global warming, and defeat local political corruption as the perfect politician. As one of your final acts of mayor, before leading a normal life, you install a fake bear head wall ornament in the mayoral office.")
+  elif scenario_five_print_two == "Final Boss Fight":
+    print("You search for 10 days and nights for the original bear that led you on the path you are one today. Finally, you find it. A brute of large size, that could easily overpower you if you hadn't spent the last 5 years of your life preparing for this exact moment. The epic battle that proceeded is regarded by the locals as 'The End of Times' after all the destruction it caused. But once it is over, you have won. Congratulations, there is nothing else for life to teach you.")
 elif fight_four == "True":
   scenario_five_print_three = input("\nType 'Try Again' to try different routes of the life you led, or type 'Accept Failure' to accept you have failed in this timeline and will eternally stare into the abyss as the result of your actions.")
+  if scenario_five_print_three == "Try Again":
+    print("You chose to Try Again! RESTART GAME")
+  elif scenario_five_print_three == "Accept Failure":
+    print("You chose to accept the failures in your life, albeit you only failed once, and quite epically. As you stare into the abyss life once was was, in your fleeting moments of existence, you wonder what would have happened in a different life. What might happen in your next one, if such a thing exists. But before you can truly begin to wonder, your existence has faded away from the world you once new. RESTART GAME")
 elif fight_four == "False":
   scenario_five_print_four = input("\nType 'Alternate Route' to try your life again from your original encounter, or 'Accept Success' to leave things as they are.")
+  if scenario_five_print_four == "Alternate Route":
+    print("You chose to try an alternate route! RESTART GAME")
+  elif scenario_five_print_four == "Accept Success":
+    print("You have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you could get an award on accomplishments, that award would have been on your trophy shelf already. Consider this a win. GAME WON")
