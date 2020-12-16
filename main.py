@@ -85,17 +85,14 @@ elif fight_three == "Pass":
   elif scenario_four_print == "Flight":
     fight_four = "False"
 
-#scenario_four(fight_three, flight_three, pass_three)
-#if fight three:
-#pass_four
-#if flight three:
-#pass_three
-#if pass_four:
-#Fight_four or flight_four
-#scenario_five(fight_four, flight_four, pass_four)
-#if fight_four:
-#flight_five
-#if flight_four:
-#pass_five
-#if pass_four:
-#flight or fight five
+def scenario_five():
+  if fight_three == "False":
+    print("After a chaotic month, you stop for a bit to look at your life choices. Where has everything you've done led you? A random town? Away from friends of family? A newfound respect for life? Proof of your inner cowardice? What will you do now? What's left? Will you pick up your battered and broken pride and start anew? Or give in to the feeling of fear that has pushed all your choices so far?")
+  elif fight_three == "True":
+    print("What a month. You've run from a bear, dueled a strange man, and earned the respect of everyone around you. What comes next? Running for mayor? Facing that dreaded bear once more? A life full of pride and victory? Learning from mistakes? No one can decide this but you, so pick a good life to lead.")
+  elif fight_four == "True":
+    print("It was quiet life you lead, but it certainly ended with lots of excitement. How you thought you could beat reality itself will be a mystery for ages to come, but there is some worth in what you have done so far. Albeit it wasn't much. You pretty much dodged every interesting bit of life that was thrown at you. Would you like to try again?")
+  elif fight_four == "False":
+    print("A reasonable answer, it would have been interesting if you tried. You continue on with your life, completing all those tasks that appear to have piled up. They take you through a life full of happiness and success. When your days come to an end, you ponder over the strangest decisions you've made in your lifetime. The brawl with the bear comes back to you. As your existence begins to fade as a sign of your age, you begin to wonder. What would have happened if you made a different choice?")
+
+scenario_five()
