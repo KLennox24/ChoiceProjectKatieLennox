@@ -4,10 +4,13 @@ explanation_check = input("Welcome to Fight or Flight! Have you played the game 
 def game_explanation():
   print("\nIn this game, you will answer different scenarios you are presented with by answering either Fight or Flight. Some scenarios do not allow you to answer them. Based on the decisions you make, your character will move through the game, dealing with your past decisions. If you type something other than\n'Fight' or 'Flight', the game will not work. If you are not given the option\nto respond, press enter to continue the game. Good luck!")
 
-if explanation_check == "Y":
-  print("\nThe first scenario will begin shortly.")
-elif explanation_check == "N":
-  game_explanation()
+def explanation_if_else():
+  if explanation_check == "Y":
+    print("\nThe first scenario will begin shortly.")
+  elif explanation_check == "N":
+    game_explanation()
+
+explanation_if_else()
 
 scenario_one_print = input("\nYou were camping one day, when a bear was found roaming around your tent.\nUnfortunately, it appears to be agressive, so you don't have much choice\nbut to fight the bear, or run. Type 'Fight' to fight the bear, or 'Flight'\nto run away.\n")
 
@@ -97,10 +100,13 @@ def scenario_five():
 
 scenario_five()
 
+restart_game = 0
+
 if fight_three == "False":
   scenario_five_print_one = input("\nType 'Start Anew' to start a life in your new town, or 'Give In' to try to\ngo home one last time.")
   if scenario_five_print_one == "Start Anew":
-    print("\nYou have chosen to start anew! RESTART GAME")
+    print("\nYou have chosen to start anew!")
+    restart_game = 1
   elif scenario_five_print_one == 'Give In':
     print("\nYou try to go home one last time, to the one place you only ever knew. After\nrealizing there is no chance they will let you come back, you go back to\nyour new home. What now?")
 elif fight_three == "True":
@@ -112,12 +118,49 @@ elif fight_three == "True":
 elif fight_four == "True":
   scenario_five_print_three = input("\nType 'Try Again' to try different routes of the life you led, or type\n'Accept Failure' to accept you have failed in this timeline and will\neternally stare into the abyss as the result of your actions.")
   if scenario_five_print_three == "Try Again":
-    print("\nYou chose to Try Again! RESTART GAME")
+    print("\nYou chose to Try Again!")
+    restart_game = 1
   elif scenario_five_print_three == "Accept Failure":
-    print("\nYou chose to accept the failures in your life, albeit you only failed once, and quite epically. As you stare into the abyss life once was was, in your\nfleeting moments of existence, you wonder what would have happened in a\ndifferent life. What might happen in your next one, if such a thing exists. But before you can truly begin to wonder, your existence has faded away from\nthe world you once new. RESTART GAME")
+    print("\nYou chose to accept the failures in your life, albeit you only failed once, and quite epically. As you stare into the abyss life once was was, in your\nfleeting moments of existence, you wonder what would have happened in a\ndifferent life. What might happen in your next one, if such a thing exists. But before you can truly begin to wonder, your existence has faded away from\nthe world you once new.")
+    restart_game = 1
 elif fight_four == "False":
   scenario_five_print_four = input("\nType 'Alternate Route' to try your life again from your original encounter, or 'Accept Success' to leave things as they are.")
   if scenario_five_print_four == "Alternate Route":
     print("\nYou chose to try an alternate route! RESTART GAME")
+    restart_game = 1
   elif scenario_five_print_four == "Accept Success":
     print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. GAME WON")
+
+#game restart area 
+
+while restart_game > 0:
+  explanation_check = input("Welcome to Fight or Flight! Have you played the game before? Type 'Y' if\nyes, 'N' if no.\n")
+  explanation_if_else()
+  scenario_one_print = input("\nYou were camping one day, when a bear was found roaming around your tent.\nUnfortunately, it appears to be agressive, so you don't have much choice\nbut to fight the bear, or run. Type 'Fight' to fight the bear, or 'Flight'\nto run away.\n")
+  if scenario_one_print == "Fight":
+    fight_one = "True"
+  elif scenario_one_print == "Flight":
+    fight_one = "False"
+  scenario_one() 
+  scenario_two() 
+  if fight_one == "True":
+    fight_two = "Pass"
+  elif fight_one == "False":
+    scenario_two_print = input("\nType 'Fight' to accept the duel, or 'Flight' to run away.\n")
+    if scenario_two_print == "Fight":
+      fight_two = "True"
+    elif scenario_two_print == "Flight":
+      fight_two = "False"
+  scenario_three() 
+  if fight_two == "False":
+    scenario_three_print = input("\nType 'Fight' to accept the duel, or 'Flight' to run away.\n")
+    if scenario_three_print == "Fight":
+      fight_three = "True"
+    elif scenario_three_print == "Flight":
+      fight_three = "False"
+  elif fight_two == "True":
+    fight_three = "Pass"
+  elif fight_two == "Pass":
+    fight_three = "Pass"
+  scenario_four() 
+
