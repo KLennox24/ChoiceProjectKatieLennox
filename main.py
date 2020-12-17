@@ -1,3 +1,9 @@
+print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. \u001b[32mGAME WON\u001b[0m")
+game_won = 1
+while game_won > 0:
+  print("\nCongratulations! Maybe out of pure luck, or playing this game too many times, you have won the game in the only way possible.\nヽ(°〇°)ﾉ\n（〜^∇^)〜\n〜(꒪꒳꒪)〜\n〜(^∇^〜)")
+  game_won = 0
+
 
 restart_game = 0
 
@@ -90,7 +96,7 @@ elif fight_three == "Pass":
   elif scenario_four_print == "Flight":
     fight_four = "False"
 
-def scenario_five(restart_game):
+def scenario_five():
   if fight_three == "False":
     print("\nAfter a chaotic month, you stop for a bit to look at your life choices.\nWhere has everything you've done led you? A random town? Away from friends\nand family? A newfound respect for life? Proof of your inner cowardice?\nWhat will you do now? What's left? Will you pick up your battered and broken\npride and start anew? Or give in to the feeling of fear that has pushed all\nyour choices so far?")
     scenario_five_print_one = input("\nType 'Start Anew' to start a life in your new town, or 'Give In' to try to\ngo home one last time.")
@@ -118,11 +124,10 @@ def scenario_five(restart_game):
     if scenario_five_print_four == "Alternate Route":
       print("\nYou chose to try an alternate route! Run the code again to try again!")
     elif scenario_five_print_four == "Accept Success":
-      print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. GAME WON")
+      print("\nYou have accepted the success in your life, the perfect life. If life was a speedrun, you got a perfect run on your first try. Congratulations. If you\ncould get an award on accomplishments, that award would have been on your\ntrophy shelf already. Consider this a win. \u001b[32mGAME WON")
+      game_won = 1
+      while game_won > 0:
+        print("Congratulations! Maybe out of pure luck, or playing this game too many times, you have won the game in the only way possible.\nヽ(°〇°)ﾉ\n（〜^∇^)〜\n〜(꒪꒳꒪)〜\n〜(^∇^〜)")
+        game_won = 0
       
-
-scenario_five(restart_game)
-
-
-
-
+scenario_five()
