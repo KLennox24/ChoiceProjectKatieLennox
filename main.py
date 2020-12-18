@@ -15,6 +15,7 @@ def explanation_if_else():
 #if the user does want instructions, explanation will be given
 
 explanation_if_else()
+#runs the explanation function
 
 scenario_one_print = input("\nYou were camping one day, when a bear was found roaming around your tent.\nUnfortunately, it appears to be agressive, so you don't have much choice\nbut to fight the bear, or run. Type 'Fight' to fight the bear, or 'Flight'\nto run away.\n")
 #prints the first scenario and asks the user to respond
