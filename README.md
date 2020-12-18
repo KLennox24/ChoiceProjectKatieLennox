@@ -19,15 +19,15 @@ The code currently works with the scenarios used, but to add more, fork the code
 ### Executing program
 
 How to Run the Program:
-* Click the 'Run' button to start the code
-* Follow the code instructions on information about what to do 
-* Respond to each scenario with the correct, capitalized choice for the code to run correctly 
-* If these instructions are not followed, the code will not run, and the code will need to be restarted
-* To restart the code, stop the code by hitting the 'Stop' button, and hit the 'Run' button to start the code again
+* Click the 'Run' button to start the code.
+* Follow the code instructions on information about what to do.
+* Respond to each scenario with the correct, capitalized choice for the code to run correctly.
+* If these instructions are not followed, the code will not run, and the code will need to be restarted.
+* To restart the code, stop the code by hitting the 'Stop' button, and hit the 'Run' button to start the code again.
 
 ## Help
 
-A common issue when creating new scenarios would be not using the correct variables, this can lead to confusion. Naming the variables appropriately makes the code easier to understand, and running the code after each major addition can be useful
+A common issue when creating new scenarios would be not using the correct variables, this can lead to confusion. Naming the variables appropriately makes the code easier to understand, and running the code after each major addition can be useful. 
 
 ## Authors
 
