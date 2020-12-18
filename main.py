@@ -1,41 +1,50 @@
 
-restart_game = 0
-
 explanation_check = input("Welcome to Fight or Flight! Have you played the game before? Type 'Y' if\nyes, 'N' if no.\n")
+#input if the user would like instructions
 
 def game_explanation():
   print("\nIn this game, you will answer different scenarios you are presented with by answering either Fight or Flight. Some scenarios do not allow you to answer them. Based on the decisions you make, your character will move through the game, dealing with your past decisions. If you type something other than\n'Fight' or 'Flight', the game will not work. If you are not given the option\nto respond, the game will continue on it's own. Good luck!")
+#instruction print code
 
 def explanation_if_else():
   if explanation_check == "Y":
     print("\nThe first scenario will begin shortly.")
   elif explanation_check == "N":
     game_explanation()
+#if the user did not want instructions, the explanation will not be read
+#if the user does want instructions, explanation will be given
 
 explanation_if_else()
 
 scenario_one_print = input("\nYou were camping one day, when a bear was found roaming around your tent.\nUnfortunately, it appears to be agressive, so you don't have much choice\nbut to fight the bear, or run. Type 'Fight' to fight the bear, or 'Flight'\nto run away.\n")
+#prints the first scenario and asks the user to respond
 
 if scenario_one_print == "Fight":
   fight_one = "True"
 elif scenario_one_print == "Flight":
   fight_one = "False"
+#if the bear is fought the fight variable is true, if not, the variable
+#is false, _one is added because it is for scenairo one
 
 def scenario_one():
   if scenario_one_print == "Fight" :
     print("\nYou chose to fight the bear! It was not much of a competition, for the bear won in an instant. But, you made it out alive, despite it being a very close\ncall.")
   elif scenario_one_print == "Flight" :
     print("\nYou chose to run from the bear! It was a smart decision, because the bear\nimmediately loses interest, and continues to sniff around your tent.\nUnfortunately, your town is known for being full of quarrelsome people, that\nwould probably disagree with your decision. Good thing no one saw you!")
+#prints the responses to the different decisions
 
 scenario_one()
+#runs the code for the responses
 
 def scenario_two():
   if fight_one == "True":
     print("\nAs you are walking downtown after your recovery, you notice a lumberjack\nwalk by you, and give you a respectful nod. Even though you are slightly\nconfused by this, you can not ignore the fact it feels like you barely\nescaped a dangerous situation. You wonder why he gave you that nod, but\ncontinue on with your day.\n")
   elif fight_one == "False":
     print("\nThe world must not be feeling kind to you today. While walking through your neighborhood, a threatening lumberjack approaches you. He explains that he\nwas passing by when he saw you running from the bear. That was a foolish\ndecision. The lumberjack challenges you to a duel! Do you choose to fight or\nrun?")
+#based on the past responses, the next scenario is printed
 
 scenario_two()
+#scenario two function runs
 
 if fight_one == "True":
   fight_two = "Pass"
@@ -45,6 +54,7 @@ elif fight_one == "False":
     fight_two = "True"
   elif scenario_two_print == "Flight":
     fight_two = "False"
+#the fight is either passed, or new user input is gathered for scenario three
 
 def scenario_three():
   if fight_two == "True":
@@ -53,8 +63,10 @@ def scenario_three():
     print("\nYou have been shunned from your town for cowardice. They couldn't allow a\nchicken to stay. Would you like to prove the people of your town wrong by\npicking a fight, or leave the town peacefully?")
   elif fight_two == "Pass":
     print("It's been very quiet since your original bear encounter. Maybe luck is on\nyour side today? Either way, it has been a calm few days.")
+#based on scenario two, new scenarios are printed
 
 scenario_three() 
+#runs the scenario_three function
 
 if fight_two == "False":
   scenario_three_print = input("\nType 'Fight' to fight your town, or 'Flight' to run away.\n")
@@ -66,7 +78,8 @@ elif fight_two == "True":
   fight_three = "Pass"
 elif fight_two == "Pass":
   fight_three = "Pass"
-  
+#if the user needs to give input, the user is given the option, otherwise, the fight variable is passed
+
 def scenario_four():
   if fight_three == "True":
     print("\n\'Twas but a test! You didn't stand a chance against the brutes of your\nvillage, but after discovering you were willing to fight them, they\nwelcome you back with open arms.")
@@ -74,8 +87,10 @@ def scenario_four():
     print("\nYou have been kicked out of your village. It might have been for the best,\nbut now you are in a new town, knowing absolutley no one.")
   elif fight_three == "Pass":
     print("\nIt has been quiet for a while, so you decide to do some snooping. After\nfinding nothing, you ask the universe for something to do. This was a\nmistake. You thought luck was finally on your side? A foolish\nmiscalculation. Within mere seconds, you find yourself surrounded by\nhundreds of minute tasks, all equally important, begging to be completed.\nDo you dare tempt the fates once more by starting a fight with existence\nitself?")
-  
+#the next scenario prints are written  
+
 scenario_four()
+#the scenarios run
 
 if fight_three == "True":
   fight_four = "Pass"
@@ -87,6 +102,7 @@ elif fight_three == "Pass":
     fight_four = "True"
   elif scenario_four_print == "Flight":
     fight_four = "False"
+#depending on scenario four and scenario three responses, the variables are set as True, False, or Pass
 
 def scenario_five():
   if fight_three == "False":
@@ -122,5 +138,9 @@ def scenario_five():
         print("\nCongratulations! Maybe out of pure luck, or playing this game too many\ntimes, you have won the game in the only way possible.\n\u001b[31;1mヽ\u001b[33;1m(\u001b[32;1m°\u001b[34;1m〇\u001b[35;1m°\u001b[31;1m)\u001b[33;1mﾉ\u001b[0m\n\u001b[35;1m（\u001b[34;1m〜\u001b[32;1m^\u001b[33;1m∇\u001b[31;1m^\u001b[35;1m)\u001b[34;1m〜\u001b[0m\n\u001b[31;1m〜\u001b[33;1m(\u001b[32;1m꒪\u001b[34;1m꒳\u001b[35;1m꒪\u001b[31;1m)\u001b[33;1m〜\u001b[0m\n\u001b[35;1m〜\u001b[34;1m(\u001b[32;1m^\u001b[33;1m∇\u001b[31;1m^\u001b[35;1m〜\u001b[34;1m)\u001b[0m")
         print("Coded by Katie Lennox")
         game_won = 0
-      
+#based off of the final variables, the game is ended in various ways
+#the game is only won in one scenario, where the GAME WON code is printed 
+#in every scenario, the user is given one last choice to make, and then the game ends with a final print statement
+
 scenario_five()
+#runs the scenario five print commands
