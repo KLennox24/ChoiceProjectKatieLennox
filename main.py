@@ -120,6 +120,7 @@ def scenario_five():
       game_won = 1
       while game_won > 0:
         print("\nCongratulations! Maybe out of pure luck, or playing this game too many\ntimes, you have won the game in the only way possible.\n\u001b[31;1mヽ\u001b[33;1m(\u001b[32;1m°\u001b[34;1m〇\u001b[35;1m°\u001b[31;1m)\u001b[33;1mﾉ\u001b[0m\n\u001b[35;1m（\u001b[34;1m〜\u001b[32;1m^\u001b[33;1m∇\u001b[31;1m^\u001b[35;1m)\u001b[34;1m〜\u001b[0m\n\u001b[31;1m〜\u001b[33;1m(\u001b[32;1m꒪\u001b[34;1m꒳\u001b[35;1m꒪\u001b[31;1m)\u001b[33;1m〜\u001b[0m\n\u001b[35;1m〜\u001b[34;1m(\u001b[32;1m^\u001b[33;1m∇\u001b[31;1m^\u001b[35;1m〜\u001b[34;1m)\u001b[0m")
+        print("Coded by Katie Lennox")
         game_won = 0
       
 scenario_five()
